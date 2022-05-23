@@ -13,11 +13,11 @@ fn main() {
     
     match get_temp_symbol() {
         Temperature::Celsius => 
-            println!("{i_temperature} C to F is equal {:.2}", i_temperature * 1.8 + 32.0),
+            println!("{i_temperature} C is equal {:.2} F", i_temperature * 1.8 + 32.0),
 
 
         Temperature::Fahrenheit => 
-            println!("{i_temperature} F to C is equal {:.2}", (i_temperature + 32.0) / 1.8),
+            println!("{i_temperature} F is equal {:.2} C", (i_temperature + 32.0) / 1.8),
     };
 }
 
